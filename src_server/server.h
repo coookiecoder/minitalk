@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <malloc.h>
 # include <signal.h>
+# include <stdlib.h>
 
 char	*ft_itoa(int n);
 size_t	ft_strlen(const char *s);
