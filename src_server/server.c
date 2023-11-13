@@ -37,6 +37,8 @@ int	main(void)
 	char	*pid;
 	
 	pid = ft_itoa(getpid());
+	if (!pid)
+		exit(1);
 	write(1, pid, ft_strlen(pid));
 	write(1, "\n", 1);
 	free(pid);
