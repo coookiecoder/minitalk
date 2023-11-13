@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                                            */
-/*   NOOT NOOT MOTHER FUCKER                      :#:  :#:         :#:  :#:   */
+/*   client.c                                           :+:      :+:    :+:   */
 /*                                                :#:  :#::#     #::#:  :#:   */
 /*   By: an asshole who like to break thing       :#:  :#::#: # :#::#:  :#:   */
 /*                                                :##::##: :#:#:#: :##::##:   */
 /*   Created: the-day-it-was created by UwU        :####:  :##:##:  :####:    */
-/*   Updated: the-day-it-was updated by UwU                                   */
+/*   Updated: 2023/11/13 17:59:52 by abareux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	main(int argc, char **argv)
 
 	cursor = 0;
 	if (argc == 1 || argc > 3)
-		return (1);	
+		return (1);
 	pid = ft_atoi(*(argv + 1));
 	if (argc == 2)
 		return (0);

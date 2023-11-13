@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                                            */
-/*   NOOT NOOT MOTHER FUCKER                      :#:  :#:         :#:  :#:   */
+/*   server.c                                           :+:      :+:    :+:   */
 /*                                                :#:  :#::#     #::#:  :#:   */
 /*   By: an asshole who like to break thing       :#:  :#::#: # :#::#:  :#:   */
 /*                                                :##::##: :#:#:#: :##::##:   */
 /*   Created: the-day-it-was created by UwU        :####:  :##:##:  :####:    */
-/*   Updated: the-day-it-was updated by UwU                                   */
+/*   Updated: 2023/11/13 17:59:40 by abareux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	ft_sig(int signal)
 int	main(void)
 {
 	char	*pid;
-	
+
 	pid = ft_itoa(getpid());
 	if (!pid)
 		exit(1);
@@ -44,6 +44,6 @@ int	main(void)
 	free(pid);
 	signal(SIGUSR1, ft_sig);
 	signal(SIGUSR2, ft_sig);
-	while(1)
+	while (1)
 		(void) 0;
 }
